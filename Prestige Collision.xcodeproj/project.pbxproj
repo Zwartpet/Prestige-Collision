@@ -23,10 +23,10 @@
 		5252628416FA073A00E30CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252625F16FA073A00E30CE2 /* Foundation.framework */; };
 		5252628C16FA073A00E30CE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5252628A16FA073A00E30CE2 /* InfoPlist.strings */; };
 		5252628F16FA073A00E30CE2 /* Prestige_CollisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252628E16FA073A00E30CE2 /* Prestige_CollisionTests.m */; };
-		5252629916FA0B6400E30CE2 /* prestige_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5252629816FA0B6400E30CE2 /* prestige_logo.gif */; };
-		5252629C16FA0C8C00E30CE2 /* ferrari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5252629B16FA0C8C00E30CE2 /* ferrari.jpg */; };
 		5252629E16FA17A000E30CE2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252629D16FA17A000E30CE2 /* MapKit.framework */; };
 		525262A016FA17AB00E30CE2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252629F16FA17AB00E30CE2 /* CoreLocation.framework */; };
+		526A150816FA382400BF31DF /* ferrari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 526A150616FA382400BF31DF /* ferrari.jpg */; };
+		526A150916FA382400BF31DF /* prestige_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 526A150716FA382400BF31DF /* prestige_logo.gif */; };
 		52A39FCA16FA1E29001C0BC0 /* JTCMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A39FC916FA1E29001C0BC0 /* JTCMapView.m */; };
 /* End PBXBuildFile section */
 
@@ -63,10 +63,10 @@
 		5252628B16FA073A00E30CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5252628D16FA073A00E30CE2 /* Prestige_CollisionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prestige_CollisionTests.h; sourceTree = "<group>"; };
 		5252628E16FA073A00E30CE2 /* Prestige_CollisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prestige_CollisionTests.m; sourceTree = "<group>"; };
-		5252629816FA0B6400E30CE2 /* prestige_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = prestige_logo.gif; path = ../Images/prestige_logo.gif; sourceTree = "<group>"; };
-		5252629B16FA0C8C00E30CE2 /* ferrari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ferrari.jpg; path = ../Images/ferrari.jpg; sourceTree = "<group>"; };
 		5252629D16FA17A000E30CE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5252629F16FA17AB00E30CE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		526A150616FA382400BF31DF /* ferrari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ferrari.jpg; path = Images/ferrari.jpg; sourceTree = "<group>"; };
+		526A150716FA382400BF31DF /* prestige_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = prestige_logo.gif; path = Images/prestige_logo.gif; sourceTree = "<group>"; };
 		52A39FC816FA1E29001C0BC0 /* JTCMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCMapView.h; sourceTree = "<group>"; };
 		52A39FC916FA1E29001C0BC0 /* JTCMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCMapView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,8 +181,8 @@
 		5252629A16FA0B6D00E30CE2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5252629B16FA0C8C00E30CE2 /* ferrari.jpg */,
-				5252629816FA0B6400E30CE2 /* prestige_logo.gif */,
+				526A150616FA382400BF31DF /* ferrari.jpg */,
+				526A150716FA382400BF31DF /* prestige_logo.gif */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -264,8 +264,8 @@
 				5252627216FA073A00E30CE2 /* Default@2x.png in Resources */,
 				5252627416FA073A00E30CE2 /* Default-568h@2x.png in Resources */,
 				5252627716FA073A00E30CE2 /* MainStoryboard.storyboard in Resources */,
-				5252629916FA0B6400E30CE2 /* prestige_logo.gif in Resources */,
-				5252629C16FA0C8C00E30CE2 /* ferrari.jpg in Resources */,
+				526A150816FA382400BF31DF /* ferrari.jpg in Resources */,
+				526A150916FA382400BF31DF /* prestige_logo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
