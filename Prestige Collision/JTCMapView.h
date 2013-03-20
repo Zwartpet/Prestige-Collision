@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 JTC Software. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "<#header#>"
 
-@interface JTCMapView : NSObject
+@interface JTCMapView : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
