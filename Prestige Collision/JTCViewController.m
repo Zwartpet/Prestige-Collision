@@ -26,4 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)SendTowtruckRequest:(id)sender {
+}
+
+- (IBAction)SendEstimateRequest:(id)sender {
+}
+
+- (IBAction)WhyPrestige:(id)sender {
+}
+
+- (IBAction)ContactUs:(id)sender {
+}
 @end

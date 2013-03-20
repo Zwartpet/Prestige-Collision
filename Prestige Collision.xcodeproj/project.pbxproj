@@ -23,6 +23,11 @@
 		5252628416FA073A00E30CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252625F16FA073A00E30CE2 /* Foundation.framework */; };
 		5252628C16FA073A00E30CE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5252628A16FA073A00E30CE2 /* InfoPlist.strings */; };
 		5252628F16FA073A00E30CE2 /* Prestige_CollisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252628E16FA073A00E30CE2 /* Prestige_CollisionTests.m */; };
+		5252629916FA0B6400E30CE2 /* prestige_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5252629816FA0B6400E30CE2 /* prestige_logo.gif */; };
+		5252629C16FA0C8C00E30CE2 /* ferrari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5252629B16FA0C8C00E30CE2 /* ferrari.jpg */; };
+		5252629E16FA17A000E30CE2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252629D16FA17A000E30CE2 /* MapKit.framework */; };
+		525262A016FA17AB00E30CE2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252629F16FA17AB00E30CE2 /* CoreLocation.framework */; };
+		52A39FCA16FA1E29001C0BC0 /* JTCMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A39FC916FA1E29001C0BC0 /* JTCMapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,12 @@
 		5252628B16FA073A00E30CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5252628D16FA073A00E30CE2 /* Prestige_CollisionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prestige_CollisionTests.h; sourceTree = "<group>"; };
 		5252628E16FA073A00E30CE2 /* Prestige_CollisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prestige_CollisionTests.m; sourceTree = "<group>"; };
+		5252629816FA0B6400E30CE2 /* prestige_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = prestige_logo.gif; path = ../Images/prestige_logo.gif; sourceTree = "<group>"; };
+		5252629B16FA0C8C00E30CE2 /* ferrari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ferrari.jpg; path = ../Images/ferrari.jpg; sourceTree = "<group>"; };
+		5252629D16FA17A000E30CE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5252629F16FA17AB00E30CE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		52A39FC816FA1E29001C0BC0 /* JTCMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCMapView.h; sourceTree = "<group>"; };
+		52A39FC916FA1E29001C0BC0 /* JTCMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCMapView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525262A016FA17AB00E30CE2 /* CoreLocation.framework in Frameworks */,
+				5252629E16FA17A000E30CE2 /* MapKit.framework in Frameworks */,
 				5252625E16FA073A00E30CE2 /* UIKit.framework in Frameworks */,
 				5252626016FA073A00E30CE2 /* Foundation.framework in Frameworks */,
 				5252626216FA073A00E30CE2 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +100,7 @@
 		5252625116FA073A00E30CE2 = {
 			isa = PBXGroup;
 			children = (
+				5252629A16FA0B6D00E30CE2 /* Images */,
 				5252626316FA073A00E30CE2 /* Prestige Collision */,
 				5252628716FA073A00E30CE2 /* Prestige CollisionTests */,
 				5252625C16FA073A00E30CE2 /* Frameworks */,
@@ -106,6 +120,8 @@
 		5252625C16FA073A00E30CE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5252629F16FA17AB00E30CE2 /* CoreLocation.framework */,
+				5252629D16FA17A000E30CE2 /* MapKit.framework */,
 				5252625D16FA073A00E30CE2 /* UIKit.framework */,
 				5252625F16FA073A00E30CE2 /* Foundation.framework */,
 				5252626116FA073A00E30CE2 /* CoreGraphics.framework */,
@@ -122,6 +138,8 @@
 				5252627516FA073A00E30CE2 /* MainStoryboard.storyboard */,
 				5252627816FA073A00E30CE2 /* JTCViewController.h */,
 				5252627916FA073A00E30CE2 /* JTCViewController.m */,
+				52A39FC916FA1E29001C0BC0 /* JTCMapView.m */,
+				52A39FC816FA1E29001C0BC0 /* JTCMapView.h */,
 				5252626416FA073A00E30CE2 /* Supporting Files */,
 			);
 			path = "Prestige Collision";
@@ -158,6 +176,15 @@
 				5252628A16FA073A00E30CE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5252629A16FA0B6D00E30CE2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5252629B16FA0C8C00E30CE2 /* ferrari.jpg */,
+				5252629816FA0B6400E30CE2 /* prestige_logo.gif */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +264,8 @@
 				5252627216FA073A00E30CE2 /* Default@2x.png in Resources */,
 				5252627416FA073A00E30CE2 /* Default-568h@2x.png in Resources */,
 				5252627716FA073A00E30CE2 /* MainStoryboard.storyboard in Resources */,
+				5252629916FA0B6400E30CE2 /* prestige_logo.gif in Resources */,
+				5252629C16FA0C8C00E30CE2 /* ferrari.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +303,7 @@
 				5252626A16FA073A00E30CE2 /* main.m in Sources */,
 				5252626E16FA073A00E30CE2 /* JTCAppDelegate.m in Sources */,
 				5252627A16FA073A00E30CE2 /* JTCViewController.m in Sources */,
+				52A39FCA16FA1E29001C0BC0 /* JTCMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +484,7 @@
 				5252629416FA073A00E30CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5252629516FA073A00E30CE2 /* Build configuration list for PBXNativeTarget "Prestige CollisionTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +493,7 @@
 				5252629716FA073A00E30CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

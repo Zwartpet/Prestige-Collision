@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface JTCViewController : UIViewController
+- (IBAction)SendTowtruckRequest:(id)sender;
+- (IBAction)SendEstimateRequest:(id)sender;
+- (IBAction)WhyPrestige:(id)sender;
+- (IBAction)ContactUs:(id)sender;
 
 @end

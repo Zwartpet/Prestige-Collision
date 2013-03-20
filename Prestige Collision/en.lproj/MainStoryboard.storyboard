@@ -1,26 +1,274 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="JTCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="prestige_logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="EQE-qe-zYS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="Sd1-dr-97R"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ferrari.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="43f-gI-JXB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="f7E-oc-wfn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86H-jB-qce">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send Towtruck Request">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendTowtruckRequest:" destination="2" eventType="touchUpInside" id="Xwd-cw-ctl"/>
+                                    <segue destination="4dO-40-VjW" kind="modal" id="vIE-Ba-Les"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j48-Op-8Iz">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send Estimate Request">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendEstimateRequest:" destination="2" eventType="touchUpInside" id="BZb-8k-jh9"/>
+                                    <segue destination="eem-GE-l42" kind="modal" id="Yr0-YP-hPX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8I1-r8-5No">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Contact Us">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ContactUs:" destination="2" eventType="touchUpInside" id="4k3-GP-J8H"/>
+                                    <segue destination="gyc-ce-6HO" kind="modal" id="bXE-do-4Pg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnS-U5-hZB">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Why Prestige Collision">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="WhyPrestige:" destination="2" eventType="touchUpInside" id="3Hc-hZ-4Xu"/>
+                                    <segue destination="Usw-Nl-4zr" kind="modal" id="vzD-iy-b3P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23707638003117912" green="0.23575193098072561" blue="0.23840082908163263" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="j48-Op-8Iz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="25Y-Ma-1ZD"/>
+                            <constraint firstAttribute="trailing" secondItem="86H-jB-qce" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9fO-Jo-xr7"/>
+                            <constraint firstItem="86H-jB-qce" firstAttribute="top" secondItem="EQE-qe-zYS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9gf-vw-YuK"/>
+                            <constraint firstItem="8I1-r8-5No" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FYg-bf-H67"/>
+                            <constraint firstItem="43f-gI-JXB" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="JcB-ne-L93"/>
+                            <constraint firstItem="XnS-U5-hZB" firstAttribute="top" secondItem="j48-Op-8Iz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ZZ2-2S-VjB"/>
+                            <constraint firstItem="EQE-qe-zYS" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="dHn-MV-Tpa"/>
+                            <constraint firstItem="8I1-r8-5No" firstAttribute="top" secondItem="XnS-U5-hZB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hh5-RN-shG"/>
+                            <constraint firstAttribute="trailing" secondItem="j48-Op-8Iz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iDI-2j-pKM"/>
+                            <constraint firstItem="86H-jB-qce" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jBe-bP-DLc"/>
+                            <constraint firstItem="EQE-qe-zYS" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="l0d-yY-fCX"/>
+                            <constraint firstItem="j48-Op-8Iz" firstAttribute="top" secondItem="86H-jB-qce" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lYJ-lq-APY"/>
+                            <constraint firstAttribute="trailing" secondItem="XnS-U5-hZB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mc5-wE-PfB"/>
+                            <constraint firstItem="XnS-U5-hZB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="onN-zG-wAA"/>
+                            <constraint firstItem="43f-gI-JXB" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="qsF-Tf-Nvo"/>
+                            <constraint firstItem="43f-gI-JXB" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="sot-7t-9vW"/>
+                            <constraint firstItem="EQE-qe-zYS" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vj7-nq-vwQ"/>
+                            <constraint firstAttribute="trailing" secondItem="8I1-r8-5No" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yaj-CX-3Wg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-636" y="-71"/>
+        </scene>
+        <!--Map View-->
+        <scene sceneID="rCS-7n-bmP">
+            <objects>
+                <viewController id="4dO-40-VjW" customClass="JTCMapView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v36-3A-Egz">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-ue-nwy"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGh-uy-4ZL">
+                                <items>
+                                    <barButtonItem title="Send" width="77" id="saW-aC-KYu"/>
+                                    <barButtonItem title="Back" width="81" id="dhh-QZ-0DJ">
+                                        <connections>
+                                            <segue destination="2" kind="modal" id="pWG-Xd-yvD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TGh-uy-4ZL" firstAttribute="leading" secondItem="v36-3A-Egz" secondAttribute="leading" type="default" id="KhF-7C-qI1"/>
+                            <constraint firstItem="dcH-ue-nwy" firstAttribute="leading" secondItem="v36-3A-Egz" secondAttribute="leading" type="default" id="NzD-IR-8d5"/>
+                            <constraint firstItem="TGh-uy-4ZL" firstAttribute="top" secondItem="dcH-ue-nwy" secondAttribute="bottom" type="default" id="SBb-Yf-Wkl"/>
+                            <constraint firstItem="TGh-uy-4ZL" firstAttribute="bottom" secondItem="v36-3A-Egz" secondAttribute="bottom" type="default" id="Yl5-q2-IMd"/>
+                            <constraint firstItem="dcH-ue-nwy" firstAttribute="trailing" secondItem="v36-3A-Egz" secondAttribute="trailing" type="default" id="pMl-DR-wiR"/>
+                            <constraint firstItem="dcH-ue-nwy" firstAttribute="top" secondItem="v36-3A-Egz" secondAttribute="top" type="default" id="uaB-0m-Nid"/>
+                            <constraint firstItem="TGh-uy-4ZL" firstAttribute="trailing" secondItem="v36-3A-Egz" secondAttribute="trailing" type="default" id="yNf-OQ-pZe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="dcH-ue-nwy" id="bgd-NB-qen"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Js-gU-TPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="-1237"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nup-10-kjY">
+            <objects>
+                <viewController id="eem-GE-l42" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Efa-98-9OK">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjq-df-7ik">
+                                <items>
+                                    <barButtonItem title="Send" width="77" id="a1B-oQ-435"/>
+                                    <barButtonItem title="Back" width="81" id="ojX-ue-j3I">
+                                        <connections>
+                                            <segue destination="2" kind="modal" id="yet-s7-cvh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qjq-df-7ik" firstAttribute="leading" secondItem="Efa-98-9OK" secondAttribute="leading" type="default" id="2Ai-Wg-jhH"/>
+                            <constraint firstItem="Qjq-df-7ik" firstAttribute="bottom" secondItem="Efa-98-9OK" secondAttribute="bottom" type="default" id="9bE-9D-NXw"/>
+                            <constraint firstItem="Qjq-df-7ik" firstAttribute="trailing" secondItem="Efa-98-9OK" secondAttribute="trailing" type="default" id="JL2-OQ-gdf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdB-e9-yzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="-1135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4aW-N4-LiV">
+            <objects>
+                <viewController id="gyc-ce-6HO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GRM-St-xgs">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bg-KJ-GVE">
+                                <items>
+                                    <barButtonItem title="Send" width="77" id="PIq-ZJ-54K"/>
+                                    <barButtonItem title="Back" width="81" id="OcS-YI-h4A">
+                                        <connections>
+                                            <segue destination="2" kind="modal" id="AVR-uM-V8e"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1bg-KJ-GVE" firstAttribute="bottom" secondItem="GRM-St-xgs" secondAttribute="bottom" type="default" id="akZ-OG-baa"/>
+                            <constraint firstItem="1bg-KJ-GVE" firstAttribute="trailing" secondItem="GRM-St-xgs" secondAttribute="trailing" type="default" id="lMz-vN-5pe"/>
+                            <constraint firstItem="1bg-KJ-GVE" firstAttribute="leading" secondItem="GRM-St-xgs" secondAttribute="leading" type="default" id="o2v-yv-yb1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enw-kf-ixq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="600"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t1t-UH-vGw">
+            <objects>
+                <viewController id="Usw-Nl-4zr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KrK-f6-qEI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thn-Or-hbG">
+                                <items>
+                                    <barButtonItem title="Send" width="77" id="aAK-DB-l52"/>
+                                    <barButtonItem title="Back" width="81" id="6iR-S4-yBN">
+                                        <connections>
+                                            <segue destination="2" kind="modal" id="dyF-sP-ZEI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="thn-Or-hbG" firstAttribute="trailing" secondItem="KrK-f6-qEI" secondAttribute="trailing" type="default" id="5XN-c0-Nbt"/>
+                            <constraint firstItem="thn-Or-hbG" firstAttribute="leading" secondItem="KrK-f6-qEI" secondAttribute="leading" type="default" id="OBv-hP-EmP"/>
+                            <constraint firstItem="thn-Or-hbG" firstAttribute="bottom" secondItem="KrK-f6-qEI" secondAttribute="bottom" type="default" id="l56-2N-F9z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkn-5H-dFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="-288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ferrari.jpg" width="226" height="107"/>
+        <image name="prestige_logo.gif" width="344" height="90"/>
+    </resources>
+    <classes>
+        <class className="JTCMapView" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTCMapView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="JTCViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTCViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ContactUs:"/>
+                <relationship kind="action" name="SendEstimateRequest:"/>
+                <relationship kind="action" name="SendTowtruckRequest:"/>
+                <relationship kind="action" name="WhyPrestige:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="pWG-Xd-yvD"/>
+    </inferredMetricsTieBreakers>
 </document>
