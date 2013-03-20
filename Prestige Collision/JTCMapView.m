@@ -10,4 +10,7 @@
 
 @implementation JTCMapView
 
+- (IBAction)callTowtruckRequestButton:(id)sender {
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://0623376876"]];
+}
 @end

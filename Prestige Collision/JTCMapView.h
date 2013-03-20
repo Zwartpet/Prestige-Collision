@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "<#header#>"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface JTCMapView : UIViewController
+@interface JTCMapView : UIViewController<CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)callTowtruckRequestButton:(id)sender;
 
 @end
